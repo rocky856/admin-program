@@ -1,0 +1,17 @@
+import csv
+def file(list):
+with open("student_det.csv","a",newline='')as csv_file:
+writer=csv.writer(csv_file)
+
+if csv_file.tell==0:
+writer.writerow(["name',"age","phone num","e-mail"])
+
+writer.writerow(list)
+c="z"
+while(c="z"):
+s_i=input("enter the student det in format(name age phone num e-mail):\n")
+print("enter the det of student:",s_i)
+s_i_l=s_i.split(" ")
+file(s_i_l)
+c=input("do u need another det of the student(yes/no):")
+print("\n")
